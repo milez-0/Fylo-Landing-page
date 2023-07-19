@@ -5,38 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fylo landing page | dark theme clone</title>
   <link rel="stylesheet" href="styling/style.css">
+  <style>
+    a, button {
+      font-family: Raleway, sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-dark-100 text-white m-0">
+<body class="bg-dark-100 text-white m-0 font-impSans">
   <main class="bg-dark-200 pt-12">
     <header class="flex justify-between items-center h-10 m-auto w-4/5 mb-16">
       <!--company logo-->
       <img src="image_resource_file/logo.svg" alt="Company logo">
       <nav>
         <ul class="flex gap-5 text-sl opacity-80">
-          <li>Features</li>
-          <li>Team</li>
-          <li>Sign In</li>
+          <li class="hover:underline">
+            <a href="https://fnwork-flyo-dark-theme.netlify.app/#">Features</a>
+          </li>
+          <li class="hover:underline">
+            <a href="https://fnwork-flyo-dark-theme.netlify.app/#">Team</a>
+          </li>
+          <li class="hover:underline">
+            <a href="https://fnwork-flyo-dark-theme.netlify.app/#">Sign In</a>
+          </li>
         </ul>
       </nav>
     </header>
     <div class="grid justify-items-center"><!--intro-->
       <img src="image_resource_file/illustration-intro.png" alt="Intro illustration" class="mb-10">
-      <h1 class="text-center text-5sl mb-10 w-header leading-snug font-bold">
+      <h1 class="text-center font-impRale text-5sl mb-10 w-header leading-snug font-bold">
         All your files in one secure location, accessible anywhere.
       </h1>
       <p class="text-center mb-6 text-bxl w-p">
         Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.
       </p>
-      <button class="mb-36 bg-cyan-400 px-24 py-3 rounded-full font-semibold">
+      <button class="md:mb-36 bg-gradient-to-r from-btn-100 to-btn-200 hover:to-btn-100 px-24 py-3 rounded-full font-semibold">
         Get Started
       </button>
     </div><!--end intro-->
   </main>
   <section>
-    <div class="grid grid-cols-2 gap-12 place-items-center px-24 pb-24"><!--catch info-->
-      <div class="grid justify-items-center -mt-5"><!--first catch info card-->
+    <div class="grid md:grid-cols-2 gap-12 place-items-center px-24 pb-24"><!--catch info-->
+      <div class="grid justify-items-center mt-40 md:-mt-5"><!--first catch info card-->
         <img src="image_resource_file/icon-access-anywhere.svg" alt="Device image" class="w-20 mb-4">
-        <h3 class="text-center text-xl font-semibold mb-1">
+        <h3 class="font-impRale text-center text-xl font-semibold mb-1">
           Access your files, anywhere
         </h3>
         <p class="text-center w-cus9 opacity-85 leading-tight text-ss">
@@ -45,7 +56,7 @@
       </div>
       <div class="grid justify-items-center"><!--second catch info card-->
         <img src="image_resource_file/icon-security.svg" alt="Shield image" class="w-20 mb-4">
-        <h3 class="text-center text-xl font-semibold mb-1">
+        <h3 class="font-impRale text-center text-xl font-semibold mb-1">
           Security you can trust
         </h3>
         <p class="text-center w-cus9 opacity-85 leading-tight text-ss">
@@ -54,7 +65,7 @@
       </div>
       <div class="grid justify-items-center -mt-5"><!--third catch info card-->
         <img src="image_resource_file/icon-collaboration.svg" alt="Clock image" class="w-20 mb-4">
-        <h3 class="text-center text-xl font-semibold mb-1">
+        <h3 class="font-impRale text-center text-xl font-semibold mb-1">
           Real-time collaboration
         </h3>
         <p class="text-center w-cus9 opacity-85 leading-tight text-ss">
@@ -63,7 +74,7 @@
       </div>
       <div class="grid justify-items-center"><!--fourth catch info card-->
         <img src="image_resource_file/icon-any-file.svg" alt="File image" class="w-20 mb-4">
-        <h3 class="text-center text-xl font-semibold mb-1">
+        <h3 class="font-impRale text-center text-xl font-semibold mb-1">
           Store any type of file
         </h3>
         <p class="text-center w-cus9 opacity-85 leading-tight text-ss">
@@ -71,10 +82,10 @@
         </p>
       </div>
     </div><!--end catch info-->
-    <div class="flex gap-14 px-16 pb-20 items-center"><!--verdict division-->
+    <div class="md:flex gap-14 px-16 pb-20 items-center"><!--verdict division-->
       <img src="image_resource_file/illustration-stay-productive.png" alt="stay productive illustration" class="w-1/2">
       <div class="w-cu2">
-        <h2 class="mb-5 text-4xl font-bold">
+        <h2 class="font-impRale mb-5 text-4xl font-bold">
           Stay productive,<br> wherever you are
         </h2>
         <p class="mb-5 text-ss opacity-85">
@@ -83,8 +94,8 @@
         <p class="mb-5 text-ss opacity-85">
           Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
         </p>
-        <a href="https://fnwork-flyo-dark-theme.netlify.app/#" class="text-lg flex gap-1 items-center">
-          <span>
+        <a href="https://fnwork-flyo-dark-theme.netlify.app/#" class="text-lg flex gap-1 items-center border-b border-link hover:text-white w-44">
+          <span class="text-link">
             See how Fylo works
           </span>
           <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="6" cy="6" r="6"></circle><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"></feColorMatrix></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#62E0D9" xlink:href="#b"></use></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330"></path></g></svg>
@@ -104,7 +115,7 @@
             <img src="image_resource_file/profile-1.jpg" alt="Satish Patel display picture" class="w-10 rounded-full mr-4">
           </div>
           <div class="">
-            <h5 class="mb-1 -mt-1 text-ssm font-bold">
+            <h5 class="font-impRale mb-1 -mt-1 text-ssm font-bold">
               Satish Patel
             </h5>
             <p class="mb-4 text-sxs font-semibold opacity-70">
@@ -122,7 +133,7 @@
             <img src="image_resource_file/profile-2.jpg" alt="Satish Patel display picture" class="w-10 rounded-full mr-4">
           </div>
           <div class="">
-            <h5 class="mb-1 -mt-1 text-ssm font-bold">
+            <h5 class="font-impRale mb-1 -mt-1 text-ssm font-bold">
               Bruce McKenzie
             </h5>
             <p class="mb-4 text-sxs font-semibold opacity-70">
@@ -140,7 +151,7 @@
             <img src="image_resource_file/profile-3.jpg" alt="Satish Patel display picture" class="w-10 rounded-full mr-4">
           </div>
           <div class="">
-            <h5 class="mb-1 -mt-1 text-ssm font-bold">
+            <h5 class="font-impRale mb-1 -mt-1 text-ssm font-bold">
               Iva Boyd
             </h5>
             <p class="mb-4 text-sxs font-semibold opacity-70">
@@ -154,7 +165,7 @@
   <footer class="bg-dark-300 relative pt-48 sm:px-32 px-16 mt-small md:mt-0">
     <div class="flex justify-center">
       <div class="bg-dark-200 absolute w-cu5 sm:w-cus5 -top-40 px-5 py-10 rounded-lg"><!--early access card-->
-        <h4 class="text-center mb-6 text-4sl font-semibold">
+        <h4 class="font-impRale text-center mb-6 text-4sl font-semibold">
           Get early access today
         </h4>
         <p class="text-center mb-6 opacity-75">
@@ -165,7 +176,7 @@
             <input type="text" placeholder="email@example.com" class="py-3 px-8 w-full text-sm rounded-full placeholder-gray-600 text-blue-700">
           </div>
           <div class="cus8">
-            <button class="py-3 xl:px-5 w-full rounded-full bg-cyan-400 text-m font-semibold">
+            <button class="py-3 xl:px-5 w-full rounded-full bg-gradient-to-r from-btn-100 to to-btn-200 hover:to-btn-100 text-m font-semibold">
               Get Started For Free
             </button>  
           </div>
@@ -174,20 +185,20 @@
     </div>
     <section class="mt-20 md:mt-0">
       <img src="image_resource_file/logo.svg" alt="Company logo" class="mb-8">
-      <div class="sm:flex gap-20">
-        <div class="flex align-top">
+      <div class="sm:flex gap-14">
+        <div class="flex align-top mb-8">
           <div class="w-8">
             <img src="image_resource_file/icon-location.svg" alt="Location icon" class="w-1/2">
           </div>
-          <p class="w-cus3n">
+          <p class="w-cus3n text-szl opacity-80">
             Lorem ipsum dolor sit amet, consectetur
   adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-        <div><!--contact-->
-          <ul>
-            <li class="mb-5">
+        <div class="mb-16"><!--contact-->
+          <ul class="text-szl opacity-80">
+            <li class="mb-3">
               <img src="image_resource_file/icon-phone.svg" alt="Phone icon" class="inline-block mr-3">
               <a href="https://fnwork-flyo-dark-theme.netlify.app/#">+1-543-123-4567</a>
             </li>
@@ -197,36 +208,36 @@
             </li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li>
+        <div class="mb-14">
+          <ul class="text-szl opacity-80">
+            <li class="mb-3 hover:text-link">
               <a href="https://fnwork-flyo-dark-theme.netlify.app/#">About Us</a>
             </li>
-            <li>
+            <li class="mb-3 hover:text-link">
               <a href="https://fnwork-flyo-dark-theme.netlify.app/#">Jobs</a>
             </li>
-            <li>
+            <li class="mb-3 hover:text-link">
               <a href="https://fnwork-flyo-dark-theme.netlify.app/#">Press</a>
             </li>
-            <li>
+            <li class="mb-3 hover:text-link">
               <a href="https://fnwork-flyo-dark-theme.netlify.app/#">Blog</a>
             </li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li>
+        <div class="mb-14">
+          <ul class="text-szl opacity-80">
+            <li class="mb-3 hover:text-link">
               <a href="https://fnwork-flyo-dark-theme.netlify.app/#">Contact Us</a>
             </li>
-            <li>
+            <li class="mb-3 hover:text-link">
               <a href="https://fnwork-flyo-dark-theme.netlify.app/#">Terms</a>
             </li>
-            <li>
+            <li class="mb-3 hover:text-link">
               <a href="https://fnwork-flyo-dark-theme.netlify.app/#">Privacy</a>
             </li>
           </ul>
         </div>
-        <div><!--socials-->
+        <div class="mb-20"><!--socials-->
           <ul>
             <li>
               <a href="https://fnwork-flyo-dark-theme.netlify.app/#" class="icon" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -241,8 +252,8 @@
         </div>
       </div>
     </section>
-    <p class="text-center mt-40 text-xs">
-      Challenge by <a href="https://www.frontendmentor.io/?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/fnwork/fylo-dark-theme">Faith</a>. 
+    <p class="text-center mt-32 text-xs">
+      Challenge by <a href="https://www.frontendmentor.io/?ref=challenge" target="_blank" class="text-link2">Frontend Mentor</a>. Coded by <a href="https://github.com/fnwork/fylo-dark-theme" class="text-link2">Faith</a>. 
     </p>
   </footer>
 </body>

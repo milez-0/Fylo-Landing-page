@@ -9,7 +9,13 @@ module.exports = {
           200: 'rgb(28, 36, 49)',
           300: 'rgb(11, 21, 35)',
           400: 'rgb(32, 42, 60)',
-        }
+        },
+        btn: {
+          100: 'rgb(101, 226, 217)',
+          200: 'rgb(51, 158, 204)',
+        },
+        link: 'rgb(101, 226, 217)',
+        link2: 'rgb(62, 82, 163)',
       },
       margin: ({
         small: ('450px'),
@@ -22,7 +28,7 @@ module.exports = {
         cuz2: '350px',
         cu2: '510px',
         cus3: '310px',
-        cus3n: '355px',
+        cus3n: '350px',
         cus4: '65px',
         cus5: '50%',
         cu5: '90%',
@@ -44,6 +50,7 @@ module.exports = {
         m: ['0.89rem', { lineHeight: '1.25rem' }],
         ss: ['0.95rem', { lineHeight: '1.25rem' }],
         sxl: ['1.04rem', { lineHeight: '1.5rem' }],
+        szl: ['1.09rem', {lineHeight: '1.5rem' }],
         '4sl': ['2.1rem', { lineHeight: '2.5rem' }],
         '5sl': ['2.5rem', { lineHeight: '2.5rem' }],
         bxl: ['1.4rem', { lineHeight: '1.75rem' }],
